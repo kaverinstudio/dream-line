@@ -85,13 +85,14 @@ select {
   font-style: normal;
 }
 .header-main {
-  height: 89px;
+  min-height: 89px;
   opacity: 0.9;
   background-color: #ffffff;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 .header-main .container {
   padding: 5px;
@@ -139,9 +140,6 @@ select {
   background-color: #792d2f;
 }
 @media screen and (max-width: 992px) {
-  .header-main .container .header-nav__block .main-menu .main-menu__item {
-    background-color: #E9EDE9;
-  }
   .header-main .container .header-nav__block .main-menu .main-menu__login {
     padding: 5px 0 8px 8px;
     z-index: 5;
@@ -155,7 +153,7 @@ select {
 }
 .top-section .top-section__content .content .top-section__content-txt {
   position: absolute;
-  bottom: 7em;
+  bottom: calc(100 * (100vw/1920));
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -165,7 +163,7 @@ select {
 }
 .top-section .top-section__content .content .top-section__content-txt h1 {
   font-family: 'AlteHaasGrotesk';
-  font-size: 5vw;
+  font-size: calc(90 * (100vw/1920));
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
@@ -174,7 +172,7 @@ select {
 }
 .top-section .top-section__content .content .top-section__content-txt p {
   font-family: Univers;
-  font-size: 2vw;
+  font-size: calc(30 * (100vw/1920));
   line-height: 1.2;
   font-weight: 300;
   font-style: normal;
@@ -182,12 +180,12 @@ select {
   color: #ffffff;
 }
 .center-section .container .center-section__txt {
-  margin: 2em auto;
+  margin: calc(40 * (100vw/1920)) auto;
   text-align: center;
 }
 .center-section .container .center-section__txt .center-section__txt-title {
   font-family: Univers;
-  font-size: 3vw;
+  font-size: calc(60 * (100vw/1920));
   line-height: 1.2;
   font-weight: 300;
   color: #404040;
@@ -195,7 +193,7 @@ select {
 }
 .center-section .container .center-section__txt p {
   font-family: Univers;
-  font-size: 1.2vw;
+  font-size: calc(25 * (100vw/1920));
   line-height: 1.2;
   font-weight: 300;
   color: #636363;
@@ -222,8 +220,8 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 179px;
-  height: 179px;
+  width: calc(250 * (100vw/1920));
+  height: calc(250 * (100vw/1920));
   background-color: #4eb9f4;
   border-radius: 50%;
   margin: 20px 0;
@@ -236,8 +234,8 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 179px;
-  height: 179px;
+  width: calc(250 * (100vw/1920));
+  height: calc(250 * (100vw/1920));
   background-color: #6fc125;
   border-radius: 50%;
   margin: 20px 0;
@@ -250,8 +248,8 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 179px;
-  height: 179px;
+  width: calc(250 * (100vw/1920));
+  height: calc(250 * (100vw/1920));
   background-color: #ff5649;
   border-radius: 50%;
   position: relative;
@@ -277,8 +275,8 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 179px;
-  height: 179px;
+  width: calc(250 * (100vw/1920));
+  height: calc(250 * (100vw/1920));
   background-color: #e48f23;
   border-radius: 50%;
   margin: 20px 0;
@@ -302,14 +300,14 @@ select {
 }
 .bottom-section .container .bottom-section__card .bottom-section__card-txt .bottom-section__card-title {
   font-family: Univers;
-  font-size: 2vw;
+  font-size: calc(50 * (100vw/1920));
   line-height: 1.2;
   font-weight: 300;
   color: #404040;
 }
 .bottom-section .container .bottom-section__card .bottom-section__card-txt p {
   font-family: Univers;
-  font-size: 1.5vw;
+  font-size: calc(25 * (100vw/1920));
   line-height: 1;
   font-weight: 300;
   color: #8b8b8b;
@@ -326,7 +324,7 @@ select {
 }
 .footer-block .container .footer-block__nav .footer-block__nav-item .footer-block__nav-title .span {
   font-family: Univers;
-  font-size: 21px;
+  font-size: calc(50 * (100vw/1920));
   line-height: 22px;
   font-weight: 300;
   color: #aeaeae;
@@ -334,7 +332,7 @@ select {
 }
 .footer-block .container .footer-block__nav .footer-block__nav-item .footer-block__nav-title .footer-block__nav-items a {
   font-family: Univers;
-  font-size: 15px;
+  font-size: calc(50 * (100vw/1920));
   line-height: 22px;
   font-weight: 300;
   color: #8b8b8b;
@@ -342,7 +340,7 @@ select {
 .footer-block .container .footer-block__nav:last-child .footer-block__nav-title .span {
   min-width: 20%;
   font-family: Univers;
-  font-size: 21px;
+  font-size: calc(30 * (100vw/1920));
   line-height: 22px;
   font-weight: 300;
   color: #aeaeae;
@@ -350,7 +348,7 @@ select {
 }
 .footer-block .container .footer-block__nav:last-child .footer-block__nav-title .footer-block__nav-items a {
   font-family: Univers;
-  font-size: 15px;
+  font-size: calc(24 * (100vw/1920));
   line-height: 22px;
   font-weight: 300;
   color: #8b8b8b;
@@ -366,8 +364,8 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: calc(65 * (100vw/1920));
+  height: calc(65 * (100vw/1920));
   border-radius: 50%;
   background-color: #696b6a;
   transition: opacity 0.3s ease-in-out;
